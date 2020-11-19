@@ -11,7 +11,7 @@ def test_basic_duckduckgo(browser):
     # When the user searches for Panda
     # TODO
     search_page.search(PHRASE)
-    # Then the Search result should contain Panda
+    # Then the Search result should contain "Panda"
     # TODO
     assert PHRASE in result_page.title()
     # And the search result query is Panda
@@ -21,4 +21,3 @@ def test_basic_duckduckgo(browser):
     # TODO
     for title in result_page.result_link_titles():
         assert PHRASE.lower in title.lower()
-    raise Exception("Incomplete Test")
